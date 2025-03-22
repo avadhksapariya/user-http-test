@@ -1,0 +1,2 @@
+D:/Avadh/SelfLearning/user_http_test/android/app/.cxx/Debug/5j1k1x52/x86/CMakeFiles/edit_cache.dir
+D:/Avadh/SelfLearning/user_http_test/android/app/.cxx/Debug/5j1k1x52/x86/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+D:/Avadh/SelfLearning/user_http_test/android/app/.cxx/Debug/5j1k1x52/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Avadh/SelfLearning/user_http_test/android/app/.cxx/Debug/5j1k1x52/armeabi-v7a/CMakeFiles/rebuild_cache.dir
