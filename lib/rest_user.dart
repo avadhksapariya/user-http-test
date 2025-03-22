@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:user_http_test/model_user.dart';
 
 class RESTUser {
-  static Future<ModelUser?> getUser() async {
+  Future<ModelUser?> getUser() async {
     const String tag = "get_user";
     ModelUser? data;
 
@@ -16,9 +16,12 @@ class RESTUser {
       final response = await http.get(url);
       log('$tag response : ${response.body}');
 
-      final decodedResult = json.decode(response.body);
-      data = ModelUser.fromJson(decodedResult);
-      return data;
+      if (response.statusCode == 200) {
+        final decodedResult = json.decode(response.body);
+        data = ModelUser.fromJson(decodedResult);
+        return data;
+      }
+      throw Exception('Unable to get response with statusCode ${response.statusCode}');
     } catch (e) {
       log('$tag error: ${e.toString()}');
       return null;

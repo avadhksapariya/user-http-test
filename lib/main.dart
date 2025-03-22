@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Future<ModelUser?> getUser = RESTUser.getUser();
+  Future<ModelUser?> getUser = RESTUser().getUser();
 
   @override
   Widget build(BuildContext context) {
