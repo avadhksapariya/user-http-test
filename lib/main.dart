@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 import 'package:user_http_test/model_user.dart';
 import 'package:user_http_test/rest_user.dart';
 
@@ -33,7 +34,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Future<ModelUser?> getUser = RESTUser().getUser();
+  Future<ModelUser?> getUser = RESTUser(Client()).getUser();
 
   @override
   Widget build(BuildContext context) {
