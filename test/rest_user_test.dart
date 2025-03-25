@@ -47,7 +47,7 @@ void main() {
         () async {
           // Arrange
           when(() => mockHTTPClient.get(Uri.parse('https://jsonplaceholder.typicode.com/users/1'))).thenAnswer(
-            (invocation) async => Response('{}', 500),
+            (invocation) async => Response('', 500),
           );
           // Act
           final user = await restUser.getUser();
